@@ -3,12 +3,13 @@
     "module": "commonjs",
     "target": "es6",
     "noImplicitAny": false,
-    "rootDir": ".",
+    "rootDir": "..",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "outDir": "../lib"
   },
   "exclude": [
     "typings/main.d.ts",
