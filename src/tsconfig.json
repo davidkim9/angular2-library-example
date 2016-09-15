@@ -3,7 +3,7 @@
     "module": "commonjs",
     "target": "es6",
     "noImplicitAny": false,
-    "rootDir": "..",
+    "rootDir": ".",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
