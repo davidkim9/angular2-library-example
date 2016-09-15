@@ -1,7 +1,5 @@
 {
   "name": "angular2-library-example",
-  "version": "1.0.6",
-  "description": "An example repository for building your own Angular 2 library",
   "main": "lib/HelloWorld.js",
   "scripts": {
     "watch": "tsc -p src -w",
@@ -32,6 +30,8 @@
     "core-js": "^2.4.0",
     "es-module-loader": "^1.0.0",
     "rxjs": "5.0.0-beta.12",
-    "zone.js": "0.6.21"
-  }
+    "zone.js": "0.6.21",
+    "angular2-library-example": "git+git@github.com:davidkim9/angular2-library-example.git"
+  },
+  "typings": "components.d.ts"
 }

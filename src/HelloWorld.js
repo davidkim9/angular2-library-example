@@ -8,24 +8,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var HelloWorld = (function () {
-    function HelloWorld() {
+const core_1 = require('@angular/core');
+let HelloWorld = class HelloWorld {
+    constructor() {
         this.message = "Click Me ...";
     }
-    HelloWorld.prototype.onClick = function () {
+    onClick() {
         this.message = "Hello World!";
         console.log(this.message);
-    };
-    HelloWorld = __decorate([
-        core_1.Component({
-            selector: 'hello-world',
-            styles: ["\n       h1 {\n            color: blue;\n        }\n    "],
-            template: "<div>\n                  <h1 (click)=\"onClick()\">{{message}}</h1>\n               </div>"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HelloWorld);
-    return HelloWorld;
-}());
+    }
+};
+HelloWorld = __decorate([
+    core_1.Component({
+        selector: 'hello-world',
+        styles: [`
+       h1 {
+            color: blue;
+        }
+    `],
+        template: `<div>
+                  <h1 (click)="onClick()">{{message}}</h1>
+               </div>`
+    }), 
+    __metadata('design:paramtypes', [])
+], HelloWorld);
 exports.HelloWorld = HelloWorld;
 //# sourceMappingURL=HelloWorld.js.map
